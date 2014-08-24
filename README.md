@@ -45,7 +45,7 @@ Each directory in _directory structure_ can have __dependency file__ that have n
 
 > `{bem}` is placeholder for _BEM identifier_.
 
-Those files should contain JavaScript code that returns _dependency object_ or place _dependency object properties_ in `module.exports` (if CommonJS notation is used).
+Those files should contain JavaScript code that exports _dependency object_ (CommonJS style is used).
 
 _Dependency object_ can have next properties:
 
@@ -59,3 +59,12 @@ This properties is used to determine order of included dependencies with current
 `expect` defines dependencies, that should be included __after__ current block.
 
 `Object` in `require` and `expect` is short notation of [BEM object](https://github.com/floatdrop/bem-object) that will be normalized with [deps-normalize](https://github.com/floatdrop/deps-normalize) and missing properties (`level`, `block`, `elem`, `mod`, `val`) will be taken from current block.
+
+Example:
+
+```js
+modules.exports = {
+    require: [{block: 'parent'}],
+    expect: [{block: 'ancestor'}]
+}
+```
