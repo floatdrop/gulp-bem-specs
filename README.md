@@ -1,6 +1,6 @@
-# gulp-bem-specs
+# Specifications
 
-Specifications for the gulp-bem project
+This document is used by [gulp-bem](https://github.com/floatdrop/gulp-bem).
 
  * [BEM identifiers](#bem-identifiers-)
  * [Directory structure](#directory-structure-)
