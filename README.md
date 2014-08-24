@@ -2,9 +2,9 @@
 
 Specifications for the gulp-bem project
 
- * BEM identifiers
- * Directory structure
- * Dependencies file
+ * [BEM identifiers](#bem-identifiers-)
+ * [Directory structure](#directory-structure-)
+ * [Dependencies file](#dependencies-file-)
 
 ## BEM identifiers ![stable](http://img.shields.io/badge/spec-stable-brightgreen.svg?style=flat)
 
